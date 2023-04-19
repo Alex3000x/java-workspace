@@ -1,6 +1,6 @@
 package com.alessio.exercises.warmup;
 
-import com.alessio.exercises.oop.ClickCounter;
+import com.alessio.exercises.oop.basic.ClickCounter;
 import org.junit.jupiter.api.Test;
 
 class ClickCounterTest {

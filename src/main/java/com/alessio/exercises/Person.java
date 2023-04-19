@@ -1,6 +1,6 @@
 package com.alessio.exercises;
 
-public class Person {
+public class Person implements Comparable<Person> {
     String name;
     String surname;
     int age;
@@ -50,10 +50,14 @@ public class Person {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Person person = new Person("Michele", "Poggi", 38);
-        System.out.println(person);
+    @Override
+    public int compareTo(Person o) {
+        int r = name.compareTo(o.getName());
+        if (r != 0) {
+            return r;
+        }
+        else {
+            return surname.compareTo(o.getSurname());
+        }
     }
-
-
 }

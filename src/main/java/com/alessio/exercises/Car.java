@@ -13,8 +13,15 @@ public class Car {
         isOn = true;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "isOn=" + isOn +
+                ", licensePlate='" + licensePlate + '\'' +
+                '}';
+    }
+
     public void turnOff(){
         isOn = false;
-        System.out.println("click!");
     }
 }

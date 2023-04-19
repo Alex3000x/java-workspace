@@ -27,7 +27,7 @@ public class SDCar extends Car {
 
     @Override
     public void turnOff() {
-        turnSDOn();
+        turnSDOff();
         super.turnOff();
     }
 
@@ -35,11 +35,5 @@ public class SDCar extends Car {
     public void turnOn() {
         turnSDOff();
         super.turnOn();
-    }
-
-    public static void main(String[] args) {
-        SDCar sdc = new SDCar(true, "AALLLAA", false);
-        System.out.println(sdc);
-        sdc.turnOff();
     }
 }
